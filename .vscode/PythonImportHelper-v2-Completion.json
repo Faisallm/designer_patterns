@@ -1,0 +1,56 @@
+[
+    {
+        "label": "Dog",
+        "kind": 6,
+        "importPath": "factory",
+        "description": "factory",
+        "peekOfCode": "class Dog:\n    \"\"\"A simple dog class\"\"\"\n    def __init__(self, name):\n        self._name = name\n    def speak(self):\n        return \"Woof!\"\nclass Cat:\n    \"\"\"A simple cat class\"\"\"\n    def __init__(self, name):\n        self._name = name",
+        "detail": "factory",
+        "documentation": {}
+    },
+    {
+        "label": "Cat",
+        "kind": 6,
+        "importPath": "factory",
+        "description": "factory",
+        "peekOfCode": "class Cat:\n    \"\"\"A simple cat class\"\"\"\n    def __init__(self, name):\n        self._name = name\n    def speak(self):\n        return \"Meow!\"\ndef get_pet(pet=\"dog\"):\n    \"\"\"The Factory Method\"\"\"\n    pets = dict(dog=Dog(\"Hope\"), cat=Cat(\"Mischief\"))\n    return pets[pet]",
+        "detail": "factory",
+        "documentation": {}
+    },
+    {
+        "label": "get_pet",
+        "kind": 2,
+        "importPath": "factory",
+        "description": "factory",
+        "peekOfCode": "def get_pet(pet=\"dog\"):\n    \"\"\"The Factory Method\"\"\"\n    pets = dict(dog=Dog(\"Hope\"), cat=Cat(\"Mischief\"))\n    return pets[pet]\n# we are using a function to easily create out object.\n# without worrying about the various implementation classes of the object.\nd = get_pet(\"dog\");\nprint(d.speak())\nprint(d._name)\ne = get_pet(\"dog\");",
+        "detail": "factory",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "factory",
+        "description": "factory",
+        "peekOfCode": "d = get_pet(\"dog\");\nprint(d.speak())\nprint(d._name)\ne = get_pet(\"dog\");\nprint(e.speak())\nprint(e._name)\nc = get_pet(\"cat\")\nprint(c.speak())\nprint(c._name)",
+        "detail": "factory",
+        "documentation": {}
+    },
+    {
+        "label": "e",
+        "kind": 5,
+        "importPath": "factory",
+        "description": "factory",
+        "peekOfCode": "e = get_pet(\"dog\");\nprint(e.speak())\nprint(e._name)\nc = get_pet(\"cat\")\nprint(c.speak())\nprint(c._name)",
+        "detail": "factory",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "factory",
+        "description": "factory",
+        "peekOfCode": "c = get_pet(\"cat\")\nprint(c.speak())\nprint(c._name)",
+        "detail": "factory",
+        "documentation": {}
+    }
+]
